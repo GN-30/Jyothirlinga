@@ -38,7 +38,7 @@ const Chatbot = () => {
 
     try {
       // Point to your backend server!
-      const response = await fetch("/api/chat", {
+      const response = await fetch("https://one2-jyothirlinga.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: currentInput }), // Send the message in the request body
