@@ -38,11 +38,14 @@ const Chatbot = () => {
 
     try {
       // Point to your backend server!
-      const response = await fetch("https://one2-jyothirlinga.onrender.com", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: currentInput }), // Send the message in the request body
-      });
+      const response = await fetch(
+        "https://one2-jyothirlinga.onrender.com/api/chat",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: currentInput }), // Send the message in the request body
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Request failed with status ${response.status}`);
