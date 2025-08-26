@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3001;
 const allowedOrigins = [
   'http://localhost:5173', // Your local Vite dev environment
   'http://localhost:3000', // Your local create-react-app dev environment
-  'https://jyothirlinga.vercel.app/' // **IMPORTANT**: Replace this with your actual Vercel URL after deploying the frontend
+  'https://jyothirlinga.vercel.app' // **IMPORTANT**: Replace this with your actual Vercel URL after deploying the frontend
 ];
 
 const corsOptions = {
